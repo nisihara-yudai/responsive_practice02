@@ -44,6 +44,20 @@
   display: none;
 }
 
+@media screen and (max-width:768px){
+  .item01{
+    display: none;
+  }
+
+  .item02{
+    display: block;
+  }
+
+  .item03{
+    display: none;
+  }
+}
+
 @media screen and (max-width:480px){
   .item01{
     display: none;
@@ -58,19 +72,7 @@
   }
 }
 
-@media screen and (max-width:768px){
-  .item01{
-    display: none;
-  }
 
-  .item02{
-    display: block;
-  }
-
-  .item03{
-    display: none;
-  }
-}
 
 .poster{
   width: 360px;
