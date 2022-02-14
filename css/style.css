@@ -1,4 +1,3 @@
-
 .content01{
   width:100%;
   position: relative;
@@ -24,7 +23,7 @@
   /* height: auto; */
 }
 
-/* メディアクエリで拡大縮小 */
+/* ãƒ¡ãƒ‡ã‚£ã‚¢ã‚¯ã‚¨ãƒªã§æ‹¡å¤§ç¸®å° */
 @media screen and (max-width:768px){
   .picture{
     width: 50%;
@@ -73,6 +72,12 @@
 }
 
 
+/* 練習問題 */
+.poster01{
+  display: flex;
+  
+  flex-direction: column;
+}
 
 .poster{
   width: 360px;
@@ -80,16 +85,17 @@
   box-shadow: 2px 2px 5px gray;
 }
 
+
 .breakfast{
   width: 360px;
   margin-bottom: 10px;
-  /* margin-bottom: 10px; */
 }
 
-.comment{
+.comment {
   text-align: justify;
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 20px;
 }
 
 .title{
@@ -118,4 +124,144 @@ span{
   color: #888888;
   margin-left: 20px;
 }
+
+
+@media screen and (min-width:375px)
+{
+  .poster01{
+    display: flex;
+    
+  }
+  
+  .poster{
+    width: 100%;
+    display: none;
+  }
+
+  .breakfast{
+   width: 100%;
+   margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:999px)
+{
+  .poster01{
+  display: flex;
+  column-count: 2;
+  }
+
+  .poster{
+    width: 45%;
+  }
+
+  .breakfast{
+   width: 100%;
+   margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px)
+{
+  .poster01{
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+  .poster{
+    width: 30%;
+  }
+
+  .breakfast {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* 解答の例（カリキュラム） */
+.flex__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.practice__card {
+  width: 100%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+
+.practice__card:last-child {
+  margin-bottom: 0;
+}
+
+
+.card__img img {
+  width: 100%;
+}
+
+
+.card__content {
+  padding: 15px 25px;
+}
+
+
+.card__ttl {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+
+.card__cat {
+  padding: 5px 10px;
+  background: #008888;
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.tag {
+  font-size: 14px;
+  text-align: right;
+}
+
+
+.card__tag {
+  display: inline-block;
+  color: #008888;
+}
+
+
+.card__date {
+  display: inline-block;
+  margin-left: 20px;
+  color: #888888;
+}
+
+/* レスポンシブ (768px以上)*/
+@media screen and (min-width: 768px) {
+  .practice__card {
+    width: 45%;
+  }
+}
+
+/* レスポンシブ (1000px以上)*/
+@media screen and (min-width: 1000px) {
+  .practice__card {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+
 
