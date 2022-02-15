@@ -75,7 +75,6 @@
 /* 練習問題 */
 .poster01{
   display: flex;
-  
   flex-direction: column;
 }
 
@@ -91,7 +90,7 @@
   margin-bottom: 10px;
 }
 
-.comment {
+.comment{
   text-align: justify;
   margin-left: 15px;
   margin-right: 15px;
@@ -130,25 +129,24 @@ span{
 {
   .poster01{
     display: flex;
-    
   }
-  
+
   .poster{
     width: 100%;
     display: none;
   }
 
   .breakfast{
-   width: 100%;
-   margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width:999px)
 {
   .poster01{
-  display: flex;
-  column-count: 2;
+    display: flex;
+    column-count: 2;
   }
 
   .poster{
@@ -156,8 +154,8 @@ span{
   }
 
   .breakfast{
-   width: 100%;
-   margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -179,7 +177,7 @@ span{
 }
 
 /* 解答の例（カリキュラム） */
-.flex__item {
+/* .flex__item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -247,21 +245,20 @@ span{
   display: inline-block;
   margin-left: 20px;
   color: #888888;
-}
+} */
 
 /* レスポンシブ (768px以上)*/
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .practice__card {
     width: 45%;
   }
-}
+} */
 
 /* レスポンシブ (1000px以上)*/
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   .practice__card {
     width: 30%;
     margin-bottom: 0;
   }
-}
-
+} */
 
